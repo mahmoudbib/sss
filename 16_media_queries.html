@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <style>
+        .box {
+            border: 3px solid #000;
+            padding: 15px;
+            text-align: center;
+            width: 200px;
+            margin: auto;
+            display: none;
+        }
+        /* Mobile Devices */
+
+        @media (max-width: 500px) {
+            body {
+                background-color: red;
+            }
+
+            #mobile {
+                display: block;
+            }
+        }
+
+        /* Tablet */
+        @media (min-width: 501px) and (max-width: 768px){
+        body {
+                background-color: green;
+            }
+
+            #tablet {
+                display: block;
+            }
+        }
+
+        /* Desktop */
+        @media (min-width: 769px){
+            body {
+                background-color: gray;
+            }
+
+            #desktop {
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="desktop" class="box">
+        <h2>Desktop</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Recusandae perspiciatis nam velit adipisci provident odit.</p>
+
+    </div>
+
+    <div id="tablet" class="box">
+        <h2>Tablet</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Recusandae perspiciatis nam velit adipisci provident odit.</p>
+
+    </div>
+
+    <div id="mobile" class="box">
+        <h2>Mobile</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Recusandae perspiciatis nam velit adipisci provident odit.</p>
+
+    </div>
+</body>
+</body>
+</body>
+</html>
